@@ -896,7 +896,48 @@ p {
   margin-bottom: 39px;
 }
 
+.project-showcase {
+  position: relative;
+}
+
+.portfolio-doodle {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.portfolio-doodle-cat {
+  top: -38px;
+  left: -34px;
+  width: 76px;
+  height: 76px;
+  filter: drop-shadow(0 8px 12px rgba(69, 91, 66, 0.12));
+  transform: rotate(-10deg);
+}
+
+.portfolio-doodle-cat svg {
+  width: 100%;
+}
+
+.portfolio-doodle-flower {
+  right: -25px;
+  bottom: -38px;
+  width: 76px;
+  height: 76px;
+  border: 1px solid rgba(79, 111, 82, 0.12);
+  border-radius: 50%;
+  background: var(--mint-light);
+  color: #8ca987;
+  font-size: 48px;
+  line-height: 1;
+  transform: rotate(12deg);
+}
+
 .project-card {
+  position: relative;
+  z-index: 0;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
@@ -1501,6 +1542,21 @@ p {
     gap: 22px;
     padding: 13px;
     border-radius: 23px;
+  }
+
+  .portfolio-doodle-cat {
+    top: -28px;
+    left: 10px;
+    width: 58px;
+    height: 58px;
+  }
+
+  .portfolio-doodle-flower {
+    right: 10px;
+    bottom: -29px;
+    width: 58px;
+    height: 58px;
+    font-size: 37px;
   }
 
   .project-image,
